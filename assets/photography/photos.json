@@ -1,0 +1,74 @@
+[
+  {
+    "file": "lake-tree.jpg",
+    "source": "KakaoTalk_20261017_185937324.jpg",
+    "title": "Still water",
+    "alt": "A lone tree standing in a blue lake, with distant mountains beneath a pale sky.",
+    "width": 640,
+    "height": 960
+  },
+  {
+    "file": "forest-caravan.jpg",
+    "source": "KakaoTalk_20261017_185502490.jpg",
+    "title": "A quiet clearing",
+    "alt": "A small mint-green caravan at the end of a path between tall, dark trees.",
+    "width": 640,
+    "height": 960
+  },
+  {
+    "file": "ocean-wake.jpg",
+    "source": "KakaoTalk_20261017_185225985.jpg",
+    "title": "Across the blue",
+    "alt": "A small motorboat leaving a white wake across deep-blue ocean water.",
+    "width": 640,
+    "height": 960
+  },
+  {
+    "file": "mountain-path.jpg",
+    "source": "KakaoTalk_20261017_185835747.jpg",
+    "title": "The long way",
+    "alt": "A winding footpath leading through grassland toward snow-covered mountains.",
+    "width": 640,
+    "height": 960
+  },
+  {
+    "file": "rocky-trail.jpg",
+    "source": "KakaoTalk_20261017_185729482.jpg",
+    "title": "On the path",
+    "alt": "Two people walking along a winding path toward large rock formations.",
+    "width": 640,
+    "height": 960
+  },
+  {
+    "file": "quiet-pause.jpg",
+    "source": "KakaoTalk_20261017_185747316.jpg",
+    "title": "A quiet pause",
+    "alt": "Two people sitting together on a rock beside a shallow pool in a grassy landscape.",
+    "width": 640,
+    "height": 960
+  },
+  {
+    "file": "mountain-meadow.jpg",
+    "source": "KakaoTalk_20261017_185801807.jpg",
+    "title": "Open country",
+    "alt": "A bright-green meadow below rugged mountains with patches of snow.",
+    "width": 640,
+    "height": 960
+  },
+  {
+    "file": "green-fields.jpg",
+    "source": "KakaoTalk_20261017_185240040.jpg",
+    "title": "Between the fields",
+    "alt": "A small figure walking between layered green fields beneath a muted sky.",
+    "width": 640,
+    "height": 960
+  },
+  {
+    "file": "sea-turtle.jpg",
+    "source": "KakaoTalk_20261017_190316717.jpg",
+    "title": "Beneath the surface",
+    "alt": "A sea turtle swimming through deep-blue water beneath a column of bright bubbles.",
+    "width": 640,
+    "height": 960
+  }
+]

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f7f8f2">
+  <title>Dynamic vision sensor pixel — Yunjae Lee</title>
+  <meta name="description" content="Ongoing low-power DVS pixel design in 45-nm CMOS, targeting a 1 V supply, a 300 MHz clock, noise tolerance up to 100 kHz, and 20% photocurrent-change detection.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="research-figures.css">
+<script src="research-figures.js" defer></script><link rel="canonical" href="https://yunjaelee1.github.io/dvs.html"><meta property="og:type" content="website"><meta property="og:title" content="Dynamic vision sensor pixel — Yunjae Lee"><meta property="og:description" content="Ongoing low-power DVS pixel design in 45-nm CMOS, targeting a 1 V supply, a 300 MHz clock, noise tolerance up to 100 kHz, and 20% photocurrent-change detection."><meta property="og:url" content="https://yunjaelee1.github.io/dvs.html"><meta property="og:image" content="https://yunjaelee1.github.io/assets/yunjae-lee.jpg"><meta property="og:image:alt" content="Portrait of Yunjae Lee"></head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner">
+  <a class="identity" href="./" aria-label="Yunjae Lee, homepage"><span class="identity-mark">yl<span>·</span></span><span>Yunjae Lee <span class="identity-affiliation">/ SNU ECE</span></span></a>
+  <nav aria-label="Main navigation"><a href="profile.html#research" aria-label="Research and Projects"><span class="research-nav-long">Research &amp; Projects</span><span class="research-nav-short" aria-hidden="true">Research</span></a><a class="nav-cv" href="assets/Yunjae_Lee_CV.pdf" target="_blank" rel="noopener">CV ↗</a></nav>
+</div></header>
+<main id="main" class="absorber-project-page shell">
+  <a class="quiet-link absorber-return" href="profile.html#research">← Back to Research &amp; Projects</a>
+  <div class="absorber-page-heading"><p class="eyebrow">Research &amp; Projects / Project detail</p><h1>Dynamic vision sensor pixel</h1></div>
+  <div id="detail-body"><article class="research-item absorber-project-detail">
+  <div class="item-overline"><span>Event-driven sensing</span><span class="item-date">Jul 2026–present</span></div>
+  <p class="item-context">Analog circuit design · 45-nm CMOS</p>
+  <p>Designing a low-power 45-nm CMOS DVS pixel in Cadence Virtuoso, targeting low noise, a low contrast threshold, and in-pixel event storage. Developing a dedicated circuit block to suppress charge injection and mitigate unintended pixel behavior.</p>
+  <h4>What is a DVS pixel?</h4>
+  <p>A dynamic vision sensor (DVS) pixel detects changes in light intensity and represents them as ON/OFF events. A logarithmic photoreceptor and differencing circuit sense relative changes, while comparators determine when to generate an event. This event-driven approach can reduce redundant sensing and data transfer.</p>
+  <h4>Design goals</h4>
+  <p>I am developing a low-power analog sensing circuit to detect small photocurrent changes while rejecting noise and leakage-driven false events. The design targets are listed below.</p>
+  <table class="case-study-table" aria-label="DVS pixel design targets">
+    <thead><tr><th scope="col">Parameter</th><th scope="col">Design target</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Supply voltage, V<sub>DD</sub></th><td>1 V</td></tr>
+      <tr><th scope="row">Clock frequency</th><td>300 MHz</td></tr>
+      <tr><th scope="row">Noise-frequency tolerance</th><td>Up to 100 kHz</td></tr>
+      <tr><th scope="row">Relative photocurrent change</th><td>20%</td></tr>
+    </tbody>
+  </table>
+  <h4>Circuit design</h4>
+  <p>I am developing the photoreceptor, differencing stage, ON/OFF comparators, and local event storage in Cadence Virtuoso. The current focus is balancing sensitivity, noise rejection, and power consumption while exploring reset control to suppress leakage-driven false events.</p>
+  <p><strong>Status:</strong> Circuit design and validation are in progress.</p>
+  <details class="research-details">
+    <summary>Design references <span class="expand-icon" aria-hidden="true">+</span></summary>
+    <div class="details-body dvs-references">
+      <p>The following works are references for this project:</p>
+      <ul>
+        <li><strong>M. Akrarai, N. Margotat, G. Sicard, and L. Fesquet.</strong> “A hybrid event-based pixel for low-power image sensing,” <em>ICECS</em>, 2021. <a href="https://doi.org/10.1109/ICECS53924.2021.9665509">DOI</a>.</li>
+        <li><strong>B. Son et al.</strong> “A 640×480 Dynamic Vision Sensor with a 9μm Pixel and 300Meps Address-Event Representation,” <em>ISSCC</em>, 2017.</li>
+        <li><strong>Y. Suh et al.</strong> “A 1280×960 Dynamic Vision Sensor with a 4.95-μm Pixel Pitch and Motion Artifact Minimization,” <em>ISCAS</em>, 2020 presentation.</li>
+      </ul>
+    </div>
+  </details>
+</article></div>
+  <a class="quiet-link absorber-return" href="profile.html#research">← Back to Research &amp; Projects</a>
+</main>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f7f8f2">
+  <title>Wideband Metasurface Absorber — Yunjae Lee</title>
+  <meta name="description" content="Equivalent-circuit-assisted absorber design: faster circuit-based exploration, full-wave validation, and a measured screen-printed prototype.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="research-figures.css">
+<script src="research-figures.js" defer></script><link rel="canonical" href="https://yunjaelee1.github.io/absorber.html"><meta property="og:type" content="website"><meta property="og:title" content="Wideband Metasurface Absorber — Yunjae Lee"><meta property="og:description" content="Equivalent-circuit-assisted absorber design: faster circuit-based exploration, full-wave validation, and a measured screen-printed prototype."><meta property="og:url" content="https://yunjaelee1.github.io/absorber.html"><meta property="og:image" content="https://yunjaelee1.github.io/assets/yunjae-lee.jpg"><meta property="og:image:alt" content="Portrait of Yunjae Lee"></head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner">
+  <a class="identity" href="./" aria-label="Yunjae Lee, homepage"><span class="identity-mark">yl<span>·</span></span><span>Yunjae Lee <span class="identity-affiliation">/ SNU ECE</span></span></a>
+  <nav aria-label="Main navigation"><a href="profile.html#research" aria-label="Research and Projects"><span class="research-nav-long">Research &amp; Projects</span><span class="research-nav-short" aria-hidden="true">Research</span></a><a class="nav-cv" href="assets/Yunjae_Lee_CV.pdf" target="_blank" rel="noopener">CV ↗</a></nav>
+</div></header>
+<main id="main" class="absorber-project-page shell">
+  <a class="quiet-link absorber-return" href="profile.html#research">← Back to Research &amp; Projects</a>
+  <div class="absorber-page-heading"><p class="eyebrow">Research &amp; Projects / Project detail</p><h1>Wideband Metasurface Absorber</h1></div>
+  <div id="detail-body"><article class="research-item absorber-project-detail">
+          <div class="item-overline"><span>RF modeling · Wave Fusion Lab</span><span class="item-date">Jan–Dec 2025</span></div>
+          <p class="item-context">Research internship · Advisor: Prof. Jungsuek Oh</p>
+          <p>Developed an equivalent-circuit-assisted approach to accelerate absorber design exploration. A model calibrated to full-wave simulations links ring geometry to resonance and impedance, enabling low-cost circuit evaluations before full-wave validation of geometry updates.</p>
+          <h4>What is a metasurface absorber?</h4>
+          <p>A metasurface absorber is a thin, patterned structure that absorbs incident electromagnetic waves. Here, resistive rings dissipate the wave energy, impedance matching reduces reflection, and a metal backing blocks transmission.</p>
+          <aside class="absorber-insight" aria-label="Computational benefit of equivalent-circuit modeling">
+            <h4>Faster exploration with a calibrated circuit model</h4>
+            <p>Explore resonance placement and impedance matching in ADS, then check the updated geometry in HFSS.</p>
+            <dl class="absorber-timings">
+              <div><dt>HFSS · one geometry evaluation</dt><dd>188 <span>s</span></dd></div>
+              <div><dt>ADS · one circuit evaluation</dt><dd>1.05 <span>s</span></dd></div>
+            </dl>
+            <p class="absorber-timing-scope">Reported per-evaluation timings for the investigated configurations. Initial full-wave calibration, circuit-parameter extraction, and subsequent full-wave validation are additional steps; these values do not measure total optimization time.</p>
+          </aside>
+          <div class="absorber-figures absorber-design-figures">
+              <figure class="absorber-figure">
+                <a class="absorber-figure-link" href="assets/metasurface/design-evolution.png" aria-label="Enlarge shape the resonances figure" aria-haspopup="dialog">
+                  <img src="assets/metasurface/design-evolution.png" width="948" height="392" alt="Initial circular-ring unit cell and the final design with auxiliary corner rings." loading="lazy" decoding="async">
+                  <span class="absorber-figure-open">Enlarge image ⤢</span>
+                </a>
+                <figcaption><strong>Shape the resonances</strong><span>Adding corner rings introduces an additional resonance to broaden the absorption band.</span></figcaption>
+              </figure>
+              <figure class="absorber-figure">
+                <a class="absorber-figure-link" href="assets/metasurface/equivalent-circuit.png" aria-label="Enlarge map geometry to a circuit figure" aria-haspopup="dialog">
+                  <img src="assets/metasurface/equivalent-circuit.png" width="1056" height="544" alt="Equivalent circuit with separate RLC branches for the corner ring and main ring, coupled capacitances, and a grounded-substrate transmission line." loading="lazy" decoding="async">
+                  <span class="absorber-figure-open">Enlarge image ⤢</span>
+                </a>
+                <figcaption><strong>Map geometry to a circuit</strong><span>Geometry-dependent circuit elements guide resonance placement and impedance matching.</span></figcaption>
+              </figure>
+          </div>
+          <p><strong>Measured result:</strong> A 3-mm-thick prototype demonstrated estimated absorptivity above 90% over 7.75–16.07 GHz at normal incidence.</p>
+          <details class="research-details" open>
+            <summary>Model assessment &amp; experimental validation <span class="expand-icon" aria-hidden="true">+</span></summary>
+            <div class="details-body">
+              <p><strong>Model assessment:</strong> Compared ECM and full-wave responses while varying ring geometry, substrate thickness, and sheet resistance. The model captures common trends within the investigated ranges, with residual differences in the detailed response.</p>
+              <div class="absorber-figures absorber-validation-figures absorber-photo-pair">
+              <figure class="absorber-figure">
+                <a class="absorber-figure-link" href="assets/metasurface/fabricated-prototype.png" aria-label="Enlarge fabricated absorber figure" aria-haspopup="dialog">
+                  <img src="assets/metasurface/fabricated-prototype.png" width="572" height="564" alt="Photograph of the fabricated 20 by 20 array of screen-printed carbon resistive ring patterns." loading="lazy" decoding="async">
+                  <span class="absorber-figure-open">Enlarge image ⤢</span>
+                </a>
+                <figcaption><strong>Fabricated absorber</strong><span>A 20 × 20-cell carbon-pattern array on 3-mm FR-4, backed by a metal ground plane.</span></figcaption>
+              </figure>
+              <figure class="absorber-figure">
+                  <a class="absorber-figure-link" href="assets/metasurface/measurement-setup.png" aria-label="Enlarge absorber measurement setup" aria-haspopup="dialog">
+                    <img src="assets/metasurface/measurement-setup.png" width="341" height="452" alt="Absorber sample and transmit/receive antenna positioned inside an anechoic chamber, with both components highlighted in the photograph." loading="lazy" decoding="async">
+                    <span class="absorber-figure-open">Enlarge image ⤢</span>
+                  </a>
+                  <figcaption><strong>Measurement setup</strong><span>The absorber and transmit/receive antenna in the anechoic chamber used for free-space reflection measurements.</span></figcaption>
+                </figure>
+              </div>
+              <p><strong>Experimental validation:</strong> Free-space reflection measurements used VNA calibration, time gating, and metal-reference normalization to estimate absorptivity. The prototype uses distributed resistive patterns without discrete lumped components.</p>
+              <div class="absorber-figures case-study-figures-wide absorber-response-figure">
+              <figure class="absorber-figure">
+                <a class="absorber-figure-link" href="assets/metasurface/absorption-response.png" aria-label="Enlarge model to measurement figure" aria-haspopup="dialog">
+                  <img src="assets/metasurface/absorption-response.png" width="960" height="636" alt="Absorptivity versus frequency for the ECM, HFSS simulation, and measurement, with a dashed 90 percent threshold." loading="lazy" decoding="async">
+                  <span class="absorber-figure-open">Enlarge image ⤢</span>
+                </a>
+                <figcaption><strong>Model to measurement</strong><span>The three responses show common broadband behavior, with differences near the band edges.</span></figcaption>
+              </figure>
+              </div>
+              <p class="absorber-source absorber-manuscript-note">Design and response figures reproduced from my first-author manuscript, currently under review at <em>IEEE Access</em>.</p>
+              <a class="text-link" href="profile.html#manuscript">Related manuscript <span aria-hidden="true">↓</span></a>
+            </div>
+          </details>
+        </article></div>
+  <a class="quiet-link absorber-return" href="profile.html#research">← Back to Research &amp; Projects</a>
+</main>
+</body>
+</html>

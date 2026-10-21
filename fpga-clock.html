@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f7f8f2">
+  <title>FPGA Digital Clock — Yunjae Lee</title>
+  <meta name="description" content="Verilog-based multifunction digital clock on a Basys 3 FPGA, with time and alarm settings, a centisecond stopwatch, and an LED alarm-dismissal game.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="research-figures.css">
+<script src="research-figures.js" defer></script><link rel="canonical" href="https://yunjaelee1.github.io/fpga-clock.html"><meta property="og:type" content="website"><meta property="og:title" content="FPGA Digital Clock — Yunjae Lee"><meta property="og:description" content="Verilog-based multifunction digital clock on a Basys 3 FPGA, with time and alarm settings, a centisecond stopwatch, and an LED alarm-dismissal game."><meta property="og:url" content="https://yunjaelee1.github.io/fpga-clock.html"><meta property="og:image" content="https://yunjaelee1.github.io/assets/yunjae-lee.jpg"><meta property="og:image:alt" content="Portrait of Yunjae Lee"></head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner">
+  <a class="identity" href="./" aria-label="Yunjae Lee, homepage"><span class="identity-mark">yl<span>·</span></span><span>Yunjae Lee <span class="identity-affiliation">/ SNU ECE</span></span></a>
+  <nav aria-label="Main navigation"><a href="profile.html#research" aria-label="Research and Projects"><span class="research-nav-long">Research &amp; Projects</span><span class="research-nav-short" aria-hidden="true">Research</span></a><a class="nav-cv" href="assets/Yunjae_Lee_CV.pdf" target="_blank" rel="noopener">CV ↗</a></nav>
+</div></header>
+<main id="main" class="absorber-project-page shell">
+  <a class="quiet-link absorber-return" href="profile.html#research">← Back to Research &amp; Projects</a>
+  <div class="absorber-page-heading"><p class="eyebrow">Research &amp; Projects / Course project</p><h1>FPGA Digital Clock</h1></div>
+  <div id="detail-body"><article class="research-item absorber-project-detail">
+  <div class="item-overline"><span>Digital systems · FPGA design</span><span class="item-date">Dec 2024</span></div>
+  <p class="item-context">Team course project · Logic Design and Laboratory</p>
+  <p>Co-developed a multifunction digital clock in Verilog and implemented it on a Basys 3 FPGA using Xilinx Vivado. The system integrates timekeeping, editable time and alarm settings, a centisecond stopwatch, and an LED-based game for dismissing the alarm.</p>
+  <h4>Project goal</h4>
+  <p>Build an interactive digital system using the board’s switches, pushbuttons, LEDs, and four-digit seven-segment display. The design combines synchronous timing and stored settings with mode control and physical user inputs.</p>
+  <h4>Core idea: coordinate independent functions through a shared display</h4>
+  <p>The top-level design integrates separate time-setting, timekeeping, alarm-setting, stopwatch, and alarm-game modules. It selects the active module’s segment and digit-enable signals for the shared display, giving the alarm/game path priority over normal operating modes.</p>
+  <div class="absorber-figures case-study-figures-wide fpga-overview-figure">
+    <figure class="absorber-figure">
+      <a class="absorber-figure-link" href="assets/fpga-clock/system-overview.svg" aria-label="Enlarge FPGA digital clock functional overview" aria-haspopup="dialog">
+        <img src="assets/fpga-clock/system-overview.svg" width="900" height="420" alt="Timekeeping and settings, alarm and game, and stopwatch blocks feed a shared display selector, with alarm-game priority, before driving the four-digit seven-segment display." loading="lazy" decoding="async">
+        <span class="absorber-figure-open">Enlarge image ⤢</span>
+      </a>
+      <figcaption><strong>Functional overview</strong><span>Conceptual grouping of the Verilog modules and their shared display path.</span></figcaption>
+    </figure>
+  </div>
+  <h4>Implementation highlights</h4>
+  <p><strong>Timing and display:</strong> Counter logic driven by the 100 MHz board clock provides the timekeeping, stopwatch, and digit-scan timing. Multiplexing activates one display digit at a time.</p>
+  <p><strong>Physical inputs:</strong> The alarm-setting and stopwatch paths use button debouncing and edge detection. The game inputs pass through two-stage synchronizers before switch-response evaluation.</p>
+  <p><strong>Alarm game:</strong> An LFSR-based sequence selects among ten LEDs for timed, two-second response windows. The game tracks the score, rejects invalid switch responses, and releases the display back to normal operation after three correct responses.</p>
+  <h4>Project outcome</h4>
+  <p>Completed the clock, setting modes, stopwatch, and alarm-dismissal game as an integrated FPGA course project. The work provided hands-on experience with Verilog module integration, synchronous counters, input handling, display multiplexing, and board-level I/O constraints.</p>
+</article></div>
+  <a class="quiet-link absorber-return" href="profile.html#research">← Back to Research &amp; Projects</a>
+</main>
+</body>
+</html>

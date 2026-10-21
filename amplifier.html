@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f7f8f2">
+  <title>Wideband Amplifier Design — Yunjae Lee</title>
+  <meta name="description" content="Wideband PCB amplifier design with double-stub matching and electromagnetic circuit simulation.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="research-figures.css">
+<script src="research-figures.js" defer></script><link rel="canonical" href="https://yunjaelee1.github.io/amplifier.html"><meta property="og:type" content="website"><meta property="og:title" content="Wideband Amplifier Design — Yunjae Lee"><meta property="og:description" content="Wideband PCB amplifier design with double-stub matching and electromagnetic circuit simulation."><meta property="og:url" content="https://yunjaelee1.github.io/amplifier.html"><meta property="og:image" content="https://yunjaelee1.github.io/assets/yunjae-lee.jpg"><meta property="og:image:alt" content="Portrait of Yunjae Lee"></head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner">
+  <a class="identity" href="./" aria-label="Yunjae Lee, homepage"><span class="identity-mark">yl<span>·</span></span><span>Yunjae Lee <span class="identity-affiliation">/ SNU ECE</span></span></a>
+  <nav aria-label="Main navigation"><a href="profile.html#research" aria-label="Research and Projects"><span class="research-nav-long">Research &amp; Projects</span><span class="research-nav-short" aria-hidden="true">Research</span></a><a class="nav-cv" href="assets/Yunjae_Lee_CV.pdf" target="_blank" rel="noopener">CV ↗</a></nav>
+</div></header>
+<main id="main" class="absorber-project-page shell"><a class="quiet-link absorber-return" href="profile.html#research">← Back to Research &amp; Projects</a><div class="absorber-page-heading"><p class="eyebrow">Research &amp; Projects / Course project</p><h1>Wideband Amplifier Design</h1></div><div id="detail-body"><article class="research-item absorber-project-detail">
+<div class="item-overline"><span>RF circuits · Amplifier design</span><span class="item-date">Oct–Dec 2025</span></div>
+<p class="item-context">Team course project · Microwave Engineering · Prof. Wooyeol Choi</p>
+<p>Co-designed a wideband PCB amplifier in Keysight ADS, combining a two-transistor signal path with input/output matching and DC bias networks. The design was evaluated at both the schematic and electromagnetic (EM) simulation levels.</p>
+<h4>Design goal</h4>
+<p>The course brief called for a WLAN amplifier using a commercial SAV-541-DG+ packaged transistor and a low-cost PCB process, targeting the 2.4, 5, and 6 GHz bands.</p>
+<table class="case-study-table"><caption>Course targets</caption><thead><tr><th scope="col">Parameter</th><th scope="col">Target</th></tr></thead><tbody><tr><th scope="row">Bandwidth around each target band</th><td>Greater than 10%</td></tr><tr><th scope="row">Forward gain</th><td>Greater than 10 dB</td></tr><tr><th scope="row">Input and output reflection</th><td>Below −10 dB</td></tr></tbody></table>
+<h4>Core idea: tune the matching, then evaluate the physical layout</h4>
+<p>Double-stub networks at the input and output provide control over impedance matching. Transmission-line dimensions and component models were tuned in ADS, then the PCB geometry was incorporated into an EM-based circuit simulation to evaluate layout effects.</p>
+
+<div class="absorber-figures case-study-figures-wide case-study-layout-only"><figure class="absorber-figure"><a class="absorber-figure-link" href="assets/amplifier/em-layout.png" aria-label="Enlarge 3d em layout" aria-haspopup="dialog"><img src="assets/amplifier/em-layout.png" width="840" height="690" alt="Isometric electromagnetic model of the amplifier PCB conductors and vias." loading="lazy" decoding="async"><span class="absorber-figure-open">Enlarge image ⤢</span></a><figcaption><strong>3D EM layout</strong><span>The modeled PCB geometry includes patterned conductors and vias. The presentation reports a layout size of 13.817 × 5.05 mm.</span></figcaption></figure></div>
+<h4>Simulation result</h4>
+<p><strong>Reported EM-simulated band: 1.6–6.3 GHz.</strong> The EM model produced forward-gain values of 34.964 dB at 1.6 GHz and 10.029 dB at 6.3 GHz. These are simulation results from the completed design project.</p>
+
+
+</article></div><a class="quiet-link absorber-return" href="profile.html#research">← Back to Research &amp; Projects</a></main></body></html>

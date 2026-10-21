@@ -1,0 +1,101 @@
+/* Manuscript figures and the absorber case study, shared by both site views. */
+.absorber-insight { margin: 20px 0; padding: 20px 22px; border: 1px solid #d9e0d4; border-radius: 7px; background: #f3f6ee; }
+.absorber-insight h4, #detail-body .absorber-insight h4 { margin: 0 0 8px; color: var(--ink, #203b36); font-size: 14px; line-height: 1.5; }
+.absorber-insight p, #detail-body .absorber-insight p { margin: 0; font-size: 12px; line-height: 1.75; }
+.absorber-timings { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin: 18px 0 14px; }
+.absorber-timings > div { min-width: 0; }
+.absorber-timings dt { color: var(--muted, #63735f); font-size: 10px; line-height: 1.6; }
+.absorber-timings dd { margin: 4px 0 0; color: var(--ink, #203b36); font: 32px/1.2 Georgia, serif; }
+.absorber-timings dd span { font: 13px/1.2 var(--sans, sans-serif); }
+.absorber-insight .absorber-timing-scope, #detail-body .absorber-timing-scope { font-size: 10.5px; color: var(--muted, #63735f); line-height: 1.7; }
+.absorber-figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 18px; margin: 22px 0; }
+.absorber-figure { min-width: 0; margin: 0; }
+.absorber-figure-link { display: flex; position: relative; align-items: center; justify-content: center; height: 210px; padding: 12px 12px 30px; background: #fff; border: 1px solid #d9e0d4; border-radius: 5px; }
+.absorber-figure-link:hover { border-color: #8da78e; }
+.absorber-figure-link { cursor: zoom-in; }
+.absorber-figure-link img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.absorber-figure-open { position: absolute; bottom: 8px; right: 10px; font-size: 9px; color: #25695a; }
+.absorber-figure figcaption { margin-top: 10px; font-size: 11px; line-height: 1.7; color: var(--muted, #63735f); }
+.absorber-figure figcaption strong { display: block; color: var(--ink, #203b36); font-size: 12px; font-weight: 500; margin-bottom: 3px; }
+.absorber-figure figcaption span { display: block; }
+.absorber-figure figcaption small { display: block; margin-top: 5px; font-size: 9px; }
+.absorber-validation-figures { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); }
+.absorber-validation-figures .absorber-figure-link { height: 230px; }
+.absorber-source, #detail-body .absorber-source { font-size: 10px; line-height: 1.7; color: var(--muted, #63735f); }
+@media (max-width: 600px) {
+  .absorber-insight { padding: 17px; }
+  .absorber-timings { gap: 12px; }
+  .absorber-figures, .absorber-validation-figures { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .absorber-figure-link, .absorber-validation-figures .absorber-figure-link { height: auto; min-height: 0; padding: 12px 12px 30px; }
+  .absorber-figure-link img { height: auto; max-height: 340px; }
+}
+
+/* A concise project summary opens the full absorber case study. */
+.absorber-summary-link, #detail-body a.absorber-summary-link { display: block; margin: -8px -12px; padding: 8px 12px; border-radius: 6px; color: inherit; text-decoration: none; transition: background .2s; }
+.absorber-summary-link:hover { background: #f1f5ec; }
+.absorber-summary-link:focus-visible { outline: 2px solid #25695a; outline-offset: 4px; }
+.absorber-summary-link p, #detail-body .absorber-summary-link p { margin-bottom: 9px; }
+.absorber-summary-link strong { font-weight: 500; }
+.absorber-summary-cta { display: inline-flex; align-items: center; gap: 7px; margin-top: 4px; color: #25695a; font-size: 12px; }
+.absorber-summary-link:hover .absorber-summary-cta { text-decoration: underline; text-underline-offset: 4px; }
+.absorber-project-page { max-width: 900px; padding-top: 32px; padding-bottom: 60px; }
+.absorber-return { display: inline-block; font-size: 12px; color: #25695a; }
+.absorber-page-heading { margin: 28px 0 0; }
+.absorber-page-heading h1 { font-size: 44px; line-height: 1.15; letter-spacing: -1px; margin-top: 12px; }
+.absorber-project-detail { border-top: 0; }
+@media (max-width: 600px) {
+  .absorber-page-heading h1 { font-size: 32px; }
+  .absorber-project-page { padding-top: 24px; }
+}
+
+.case-study-figures-wide { grid-template-columns: minmax(0, 1fr); }
+.case-study-figures-wide .absorber-figure-link { height: auto; padding: 12px 12px 30px; }
+.case-study-figures-wide .absorber-figure-link img { height: auto; max-height: 600px; object-fit: contain; }
+.case-study-table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 12px; line-height: 1.7; }
+.case-study-table caption { text-align: left; font-size: 11px; color: var(--muted); margin-bottom: 7px; }
+.case-study-table th, .case-study-table td { text-align: left; padding: 9px 12px; border: 1px solid #d9e0d4; vertical-align: top; }
+.case-study-table thead { background: #f3f6ee; color: var(--ink); }
+.case-study-table th { font-weight: 500; }
+.case-study-table th:first-child { width: 60%; }
+.case-study-formula { font-family: Georgia, serif; font-size: 17px; color: var(--ink); padding: 12px 0; line-height: 1.8; }
+.case-study-note, #detail-body .case-study-note, .case-study-stage, #detail-body .case-study-stage { font-size: 11px; line-height: 1.7; color: var(--muted); }
+@media (max-width: 600px) { .case-study-table th, .case-study-table td { padding: 8px; } .case-study-formula { font-size: 15px; } }
+
+.case-study-layout-only { max-width: 600px; margin-left: auto; margin-right: auto; }
+.case-study-layout-only .absorber-figure-link img { max-height: 400px; }
+body.research-figure-viewing { overflow: hidden; }
+#research-figure-viewer { position: fixed; inset: 0; margin: auto; width: min(1440px, calc(100vw - 32px)); height: calc(100dvh - 32px); max-width: none; max-height: none; padding: 18px; border: 1px solid #51675a; border-radius: 10px; background: #101b17; color: #f5f6ee; overflow: hidden; animation: none; }
+#research-figure-viewer[open] { display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 16px; }
+#research-figure-viewer::backdrop { background: #101b17cf; backdrop-filter: blur(4px); }
+#research-figure-viewer .research-figure-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+#research-figure-viewer h2 { margin: 0; color: #f5f6ee; font: 400 21px/1.3 Georgia, serif; }
+#research-figure-viewer button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; flex-shrink: 0; min-height: 44px; min-width: 44px; padding: 9px 15px; border: 1px solid #64766a; border-radius: 4px; background: transparent; color: #f5f6ee; font: 12px/1.5 var(--sans, sans-serif); cursor: pointer; }
+#research-figure-viewer button:hover { background: #24382d; }
+#research-figure-viewer button:focus-visible { outline: 2px solid #d2dfb5; outline-offset: 3px; }
+#research-figure-viewer .research-figure-stage { min-width: 0; min-height: 0; display: flex; align-items: center; justify-content: center; }
+#research-figure-viewer .research-figure-stage img { display: block; width: 100%; height: 100%; max-width: none; object-fit: contain; }
+@media (max-width: 600px) {
+  #research-figure-viewer { width: calc(100vw - 16px); height: calc(100dvh - 16px); padding: 12px; border-radius: 7px; }
+  #research-figure-viewer[open] { gap: 12px; }
+  #research-figure-viewer h2 { font-size: 18px; }
+}
+@media print { #research-figure-viewer { display: none !important; } }
+
+/* PLL architecture and circuit schematics use the shared figure viewer. */
+.pll-architecture .absorber-figure-link img { max-height: 340px; }
+.pll-circuit-figures .absorber-figure-link { height: 270px; }
+@media (max-width: 600px) { .pll-circuit-figures .absorber-figure-link { height: auto; } }
+
+/* Pair the prototype and measurement photos, with the response plot below. */
+.absorber-photo-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.absorber-response-figure { max-width: 420px; margin-left: auto; margin-right: auto; }
+@media (max-width: 600px) {
+  .absorber-photo-pair .absorber-figure-link { height: 190px; padding: 8px 8px 28px; }
+  .absorber-photo-pair .absorber-figure-link img { height: 100%; }
+}
+
+/* Keep manuscript attribution readable. */
+.absorber-manuscript-note, #detail-body .absorber-manuscript-note { font-size: 13px; color: var(--ink, #203b36); }
+
+/* FPGA case study: compact architecture figure. */
+.fpga-overview-figure { max-width: 740px; margin-left: auto; margin-right: auto; }
