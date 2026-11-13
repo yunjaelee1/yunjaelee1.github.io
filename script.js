@@ -14,7 +14,7 @@
   const routeLabels = {
     direction: 'research interests', research: 'research & projects', about: 'about me',
     outputs: 'research outputs', education: 'education', beyond: 'outside the lab',
-    pll: 'hybrid PLLs', dvs: 'sensor design', rf: 'RF experience', absorber: 'metasurface absorber', amplifier: 'amplifier design', 'fpga-clock': 'FPGA digital clock', monitor: 'analog monitor'
+    pll: 'hybrid PLLs', dvs: 'sensor design', rf: 'RF experience', absorber: 'metasurface absorber', amplifier: 'amplifier design', 'fpga-clock': 'FPGA digital clock', monitor: 'analog monitor', patent: 'crosswalk safety patent'
   };
   function routeState(route) {
     const state = history.state && history.state.circuitNavigation;
